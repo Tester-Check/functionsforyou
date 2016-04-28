@@ -1,0 +1,13 @@
+/*
+this is a java method that helps to scroll a page in desired direction
+this method takes two integer arguments x and y 
+if you want to scroll vertically set pass 0 to x 
+and pass a +ve or -ve value to y based on the direction you want to scroll (up or down).
+*/
+
+public void scroll(int x, int y) {
+		String script = "scroll(" + x + "," + y + ")";
+		((JavascriptExecutor) driver).executeScript(script);
+	}
+	
+	
